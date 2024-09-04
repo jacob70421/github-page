@@ -1,18 +1,41 @@
 * {
-    background-color: black;
-    color: yellow;
+    margin: 0;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+body {
+    background-color: black;
+}
+header {
+    margin: 16px;
+}
+header, main {
+    color: yellow;
+}
+footer {
+    background-color: yellow;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 5px;
+}
 a {
     text-decoration: none;
+}
+img {
+    height: 125px;
+    width: 157px;
 }
 .container {
     display: grid;
     grid-template-columns: auto auto auto;
     border: 3px solid yellow;
+    border-radius: 10px;
 }
-img {
-    height: 125px;
-    width: 157px;
+.aboutmediv {
+    margin: 16px;
+}
+.projectsdiv {
+    margin: 16px;
 }

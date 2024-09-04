@@ -23,7 +23,7 @@ function GenerateProjectList() {
         let textName = document.createElement("b");
         let textDate = document.createElement("p");
         child.href = ProjectList[i].link;
-        child.style.cssText = "border:" + ProjectList[i].border + "; margin: 1px; display: inline-grid";
+        child.style.cssText = "border:" + ProjectList[i].border + "; border-radius: 10px; margin: 1px; display: inline-grid";
         thumbnail.src = ProjectList[i].thumbnail;
         thumbnail.style.cssText = "margin-left: auto; margin-right: auto";
         textName.style.cssText = "color:" + ProjectList[i].color + "; margin: 7px; padding-top: 7px";
