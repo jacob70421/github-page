@@ -22,7 +22,7 @@ let UnityProjectList = [
     new Project("Crack The Code And Get A Cat", "blue", "2px solid blue", "August 26, 2024", "Yes", "https://diabolicalcats.itch.io/crack-the-code-and-get-a-cat", "https://img.itch.zone/aW1nLzE3NTQ0OTU2LnBuZw==/315x250%23c/qul3cI.png")
 ];
 let BlogList = [
-    new Blog("Test Blog", "This is a test blog.", "github-page/Blogs/blog-0.html")
+    new Blog("Test Blog", "This is a test blog.", "https://jacob70421.github.io/github-page/Blogs/blog-0.html")
 ];
 GenerateUnityProjectList();
 GenerateBlogList();
