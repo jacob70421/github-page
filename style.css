@@ -1,47 +1,79 @@
 * {
     margin: 0;
+    padding: 0;
     text-align: center;
+    text-decoration: none;
+    list-style-type: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.4;
 }
 body {
     background-color: black;
 }
-header {
-    margin: 16px;
-}
 header, main {
     color: yellow;
 }
+main {
+    padding-bottom: 32.4px;
+}
 footer {
+    position: relative;
     background-color: yellow;
     color: black;
-    position: fixed;
     bottom: 0;
     width: 100vw;
     padding: 5px;
 }
-a {
-    text-decoration: none;
+nav {
+    margin-top: -10px;
+}
+li {
+    display: inline;
+}
+li a {
+    background-color: black;
+    border: 1px solid yellow;
+    color: yellow;
+    font-size: 12px;
+    padding: 3px;
 }
 img {
+    alt: "image not found";
+    margin-left: auto;
+    margin-right: auto;
     height: 125px;
     width: 157px;
 }
-.unityprojectscontainer {
+h2 {
+    margin-top: 2px;
+    margin-bottom: 4px;
+    border-bottom: 5px solid yellow;
+}
+h3 {
+    margin-top: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid yellow;
+}
+p {
+    font-size: 15px;
+}
+.container {
     display: grid;
     grid-template-columns: auto auto auto;
+    margin: 16px;
     border: 3px solid yellow;
     border-radius: 10px;
 }
-.webdevprojectscontainer {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    border: 3px solid yellow;
+#blogs {
+    grid-template-columns: auto auto auto auto auto auto;
+}
+#blogs a {
+    border: 2px solid white;
     border-radius: 10px;
+    margin: 1px;
 }
-.aboutmediv {
-    margin: 16px;
-}
-.unityprojectsdiv {
-    margin: 16px;
+#blogs a p {
+    margin-left: 5px;
+    text-align: left;
+    color: white;
 }
