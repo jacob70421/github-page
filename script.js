@@ -58,6 +58,7 @@ function GenerateBlogList() {
         let title = document.createElement("p");
         let description = document.createElement("p");
         child.href = "https://jacob70421.github.io/github-page/Blogs/" + BlogList[i].blogFile;
+        child.href = "./Blogs/" + BlogList[i].blogFile; //uncomment if testing in editor
         title.innerHTML = BlogList[i].name;
         title.style = "font-weight: bold;"
         description.innerHTML = BlogList[i].description;

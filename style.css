@@ -5,7 +5,6 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.4;
 }
 body {
     background-color: black;
@@ -17,7 +16,7 @@ main {
     padding-bottom: 32.4px;
 }
 footer {
-    position: relative;
+    position: fixed;
     background-color: yellow;
     color: black;
     bottom: 0;
@@ -26,6 +25,10 @@ footer {
 }
 nav {
     margin-top: -10px;
+}
+br {
+    display: block;
+    margin: 8px 0;
 }
 li {
     display: inline;
