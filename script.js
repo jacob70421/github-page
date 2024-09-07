@@ -10,19 +10,21 @@ class Project {
     }
 }
 class Blog {
-    constructor(name, description, blogFile) {
+    constructor(name, date, description, thumbnail, blogFile) {
         this.name = name;
+        this.date = date;
         this.description = description;
+        this.thumbnail = thumbnail;
         this.blogFile = blogFile;
     }
 }
 
 let UnityProjectList = [
-    new Project("Cargo Security", "red", "2px solid red", "May 12, 2024", "No", "https://diabolicalcats.itch.io/cargo-security", "https://img.itch.zone/aW1nLzE2OTE2OTk1LnBuZw==/315x250%23c/Ex7%2BRY.png"),
-    new Project("Crack The Code And Get A Cat", "blue", "2px solid blue", "August 26, 2024", "Yes", "https://diabolicalcats.itch.io/crack-the-code-and-get-a-cat", "https://img.itch.zone/aW1nLzE3NTQ0OTU2LnBuZw==/315x250%23c/qul3cI.png")
+    new Project("Crack The Code And Get A Cat", "blue", "2px solid blue", "August 26, 2024", "Yes", "https://diabolicalcats.itch.io/crack-the-code-and-get-a-cat", "https://img.itch.zone/aW1nLzE3NTQ0OTU2LnBuZw==/315x250%23c/qul3cI.png"),
+    new Project("Cargo Security", "red", "2px solid red", "May 12, 2024", "No", "https://diabolicalcats.itch.io/cargo-security", "https://img.itch.zone/aW1nLzE2OTE2OTk1LnBuZw==/315x250%23c/Ex7%2BRY.png")
 ];
 let BlogList = [
-    new Blog("Test Blog", "This is a test blog.", "blog-0.html")
+    new Blog("Test Blog", "September 7, 2024", "This is a test blog.", "https://fastly.picsum.photos/id/122/4147/2756.jpg?hmac=-B_1uAvYufznhjeA9xSSAJjqt07XrVzDWCf5VDNX0pQ", "blog-0.html")
 ];
 GenerateUnityProjectList();
 GenerateBlogList();
@@ -55,14 +57,20 @@ function GenerateBlogList() {
     let parent = document.querySelector("#blogs");
     for (let i = 0; i < BlogList.length; i++) {
         let child = document.createElement("a");
+        let thumbnail = document.createElement("img");
         let title = document.createElement("p");
+        let date = document.createElement("p");
         let description = document.createElement("p");
         child.href = "https://jacob70421.github.io/github-page/Blogs/" + BlogList[i].blogFile;
-        child.href = "./Blogs/" + BlogList[i].blogFile; //uncomment if testing in editor
+        //child.href = "./Blogs/" + BlogList[i].blogFile; //uncomment if testing in editor
+        thumbnail.src = BlogList[i].thumbnail;
         title.innerHTML = BlogList[i].name;
         title.style = "font-weight: bold;"
+        date.innerHTML = BlogList[i].date;
         description.innerHTML = BlogList[i].description;
+        child.appendChild(thumbnail);
         child.appendChild(title);
+        child.appendChild(date);
         child.appendChild(description);
         parent.appendChild(child);
     }

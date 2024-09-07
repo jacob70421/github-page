@@ -49,7 +49,7 @@ img {
 }
 h2 {
     margin-top: 2px;
-    margin-bottom: 4px;
+    margin-bottom: 7px;
     border-bottom: 5px solid yellow;
 }
 h3 {
@@ -68,7 +68,7 @@ p {
     border-radius: 10px;
 }
 #blogs {
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
 }
 #blogs a {
     border: 2px solid white;
@@ -77,6 +77,17 @@ p {
 }
 #blogs a p {
     margin-left: 5px;
-    text-align: left;
+    padding-bottom: 5px;
     color: white;
+}
+#blogs a img {
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 113px;
+    width: 170px;
+    margin-top: -2px;
+}
+#contactsandsocials p a {
+    text-decoration: underline;
+    color: red;
 }
