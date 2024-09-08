@@ -20,6 +20,7 @@ class Blog {
 }
 
 let UnityProjectList = [
+    new Project("Battery Restaurant", "lime", "2px solid lime", "September 8, 2024", "Yes", "https://diabolicalcats.itch.io/battery-restaurant", "https://img.itch.zone/aW1nLzE3NzAxMzIyLnBuZw==/315x250%23c/4dkLA2.png"),
     new Project("Crack The Code And Get A Cat", "blue", "2px solid blue", "August 26, 2024", "Yes", "https://diabolicalcats.itch.io/crack-the-code-and-get-a-cat", "https://img.itch.zone/aW1nLzE3NTQ0OTU2LnBuZw==/315x250%23c/qul3cI.png"),
     new Project("Cargo Security", "red", "2px solid red", "May 12, 2024", "No", "https://diabolicalcats.itch.io/cargo-security", "https://img.itch.zone/aW1nLzE2OTE2OTk1LnBuZw==/315x250%23c/Ex7%2BRY.png")
 ];
