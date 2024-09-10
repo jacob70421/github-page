@@ -7,21 +7,24 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
-    background-color: black;
+    background-color: #d3ae21;
 }
 header, main {
-    color: yellow;
+    color: black;
 }
 main {
     padding-bottom: 32.4px;
 }
 footer {
     position: fixed;
-    background-color: yellow;
-    color: black;
+    background-color: black;
+    color: #d3ae21;
     bottom: 0;
     width: 100vw;
     padding: 5px;
+}
+footer a {
+    color: red;
 }
 nav {
     margin-top: -10px;
@@ -34,9 +37,9 @@ li {
     display: inline;
 }
 li a {
-    background-color: black;
-    border: 1px solid yellow;
-    color: yellow;
+    background-color: #d3ae21;
+    border: 1px solid black;
+    color: black;
     font-size: 12px;
     padding: 3px;
 }
@@ -50,21 +53,22 @@ img {
 h2 {
     margin-top: 2px;
     margin-bottom: 7px;
-    border-bottom: 5px solid yellow;
+    border-bottom: 5px solid black;
 }
 h3 {
     margin-top: 24px;
     margin-bottom: 20px;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid black;
 }
 p {
     font-size: 15px;
 }
 .container {
+    background-color: black;
     display: grid;
     grid-template-columns: auto auto auto;
     margin: 16px;
-    border: 3px solid yellow;
+    border: 3px solid black;
     border-radius: 10px;
 }
 #blogs {

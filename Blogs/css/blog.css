@@ -1,16 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    color: yellow;
+    color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
-    background-color: yellow;
+    background-color: #d3ae21;
 }
 h1 {
     text-align: left;
     margin-top: 5px;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid black;
 }
 h2 {
     text-align: left;
@@ -22,7 +22,7 @@ p {
 }
 img {
     display: block;
-    border: 5px solid yellow;
+    border: 5px solid #d3ae21;
     margin-left: 15vw;
     margin-right: auto;
     width: 50%;
@@ -39,14 +39,14 @@ a {
     margin-left: 28vw;
     margin-right: auto;
     width: 10vw;
-    background-color: black;
-    border: 1px solid yellow;
-    color: yellow;
+    background-color: #d3ae21;
+    border: 1px solid black;
+    color: black;
     font-size: 12px;
     padding: 3px;
 }
 .background {
-    background-color: black;
+    background-color: #d4c9c3;
     padding: 10px;
     margin-top: -5px;
     margin-left: 15vw;
